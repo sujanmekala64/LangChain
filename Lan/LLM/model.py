@@ -10,5 +10,5 @@ llm = ChatOllama(
     headers={"Authorization": f"Bearer {os.getenv('OLLAMA_API_KEY')}"}
 )
  
-output = llm.invoke("who is prime minister of india?")
+output = llm.invoke("who is prime minister of UK?")
 print(output.content)
